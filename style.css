@@ -14,7 +14,7 @@
     height: 100%;
     position: fixed;
     margin-left: -300px;
-    background-color: #100901;
+    background-color: #1d4fd7;
     transition: 0.5s;
   }
   
@@ -54,9 +54,11 @@
   }
 
   .table{
-    margin-left: 290px;
-    margin-top: 3.5rem
+    margin-left: 270px;
+    margin-top: 3.5rem;
   }
+
+
 
   table tr {
     border-bottom: 1px solid black;
@@ -75,6 +77,24 @@
     height: 100%;
     overflow-x: hidden;
 }
+.card1{
+  border-left-width: 5px;
+  border-left-color: rgb(80, 150, 255);
+}
+
+.card2{
+  border-left-width: 5px;
+  border-left-color: rgb(232, 80, 255);
+}
+
+.card3{
+  border-left-width: 5px;
+  border-left-color: rgb(80, 255, 95);
+}
+.icontop:hover{
+color: #1d4fd7;
+}
+
 
 .helpbtn{
 margin-left: 90%;
@@ -89,8 +109,22 @@ margin-bottom: 2%;
 }
 
 @media only screen and (max-width: 600px) {
+  body{
+    overflow-x: hidden;
+  }
   .product {
     word-wrap: normal;
+  }
+
+  /* .tbox{
+    margin-left:40%;
+    width: 0%;
+
+
+  } */
+  .table{
+    margin-left: 40%;
+    margin-right: 0%;
   }
   .helpbtn{
     margin-left: 70%;
@@ -99,10 +133,15 @@ margin-bottom: 2%;
     word-wrap: normal;
   }
   .side-navbar{
-    width:40%;
+    width:39%;
   }
   .active-cont {
-    margin-left: 45%;
+    margin-left: 40%;
+    margin-right: 2%;
+  }
+  .fa-ellipsis-vertical{
+    display: none;
+    color: #1d4fd7;
   }
   
 }
