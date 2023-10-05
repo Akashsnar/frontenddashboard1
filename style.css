@@ -75,3 +75,34 @@
     height: 100%;
     overflow-x: hidden;
 }
+
+.helpbtn{
+margin-left: 90%;
+margin-top: 2%;
+margin-bottom: 2%;
+}
+
+@media only screen and (max-width: 1000px){
+  .helpbtn{
+    margin-left: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .product {
+    word-wrap: normal;
+  }
+  .helpbtn{
+    margin-left: 70%;
+  }
+  .card{
+    word-wrap: normal;
+  }
+  .side-navbar{
+    width:40%;
+  }
+  .active-cont {
+    margin-left: 45%;
+  }
+  
+}
