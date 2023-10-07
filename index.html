@@ -1,154 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
+	
+	 <style>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bootstrap 5 Side Bar Navigation</title>
-  <!-- bootstrap 5 css -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
-  <!-- BOX ICONS CSS-->
-  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
-  <!-- custom css -->
-  <link rel="stylesheet" href="style.css" />
+ul{
+	list-style: '-';
+}
+.upper li{
+	position: relative;
+	margin-left:0;
+	left:-1.2rem
+}
 
-
-
-
+p, .upper{
+color:rgb(131, 136, 152);
+font-weight: 500;	
+}
 
 
+.benefits li{
+	list-style-type: "✔";
 
-  <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
-    href="/css/app-wa-02670e9412103b5852dcbe140d278c49.css?vsn=d">
+}
 
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+.benefits{
+	background-color: rgb(213, 197, 222);
+	padding: 1rem;
+	border-radius:30px
+}
 
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
+.expired{
+	/* box-shadow: 0px 0px 2px 2px grey; */
+	-moz-box-shadow: 0 0 5px #999;
+-webkit-box-shadow: 0 0 5px #999;
+box-shadow: 0 0 5px #999;
 
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css">
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
 
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css">
-
-</head>
-
-<body>
-  <!-- Side-Nav -->
-  <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">
-    <ul class="nav flex-column text-white w-100">
-      <a href="#" class="nav-link h3 text-white my-2">
-        The Sweet Shop
-      </a>
-      <li href="#" class="nav-link">
-        <i class="fa-light fa-rocket"></i>
-        <span class="mx-2">Link and Resources</span>
-      </li>
-      <li href="#" class="nav-link">
-        <i class="fa-light fa-circle-dollar"></i>
-        <span class="mx-2">Sales</span>
-      </li>
-      <li href="#" class="nav-link">
-        <i class="fa-regular fa-gear"></i>
-        <span class="mx-2">Settings</span>
-      </li>
-      <li href="#" class="nav-link">
-        <i class="fa-light fa-memo-circle-info"></i>
-        <span class="mx-2">Payout Details</Details></span>
-      </li>
-      <li href="#" class="nav-link">
-        <i class="fa-light fa-circle-question"></i>
-        <span class="mx-2">Affiliate FAQ</span>
-      </li>
-    </ul>
-
-    <span href="#" class="nav-link h4 w-100 mb-5" style="color: white;">
-      test affiliate &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <i class="fa-light fa-ellipsis-vertical"></i>
-    </span>
-  </div>
-
-  < <script>
-
-    document.body.classList.add("stop-scrolling");
-    </script>
-
-    <div class="row my-container active-cont">
-      <h5 class="headingAffiliate">Affiliate Dashboard</h5>
-    </div>
+}
 
 
+.innerexpired{
+	margin:1rem 5rem 
+}
 
-    <div class="row my-container active-cont">
-      <div class="col-sm-6 col-md-4">
-        <div class="card card1">
-          <div class="card-body">
-            <h6 class="card-title" style="color: rgb(80, 150, 255);">COMMISSION RATE</h6>
-            <h1>25% <i class="fa-regular fa-money-bill-1-wave icontop" style="float: right;"></i></h1>
-            <p class="card-text">Affiliate Code:</p>
-            <p class="card-text"> Link Attribution Window : 365 days</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="card card2">
-          <div class="card-body">
-            <h6 class="card-title" style="color: rgb(232, 80, 255);">LIFE TIME EARNINGS</h6>
-            <h1>N/A <i class="fa-regular fa-badge-dollar icontop" style="float: right;"></i></h1>
-            <p class="card-text">Last 7 Days: N/A</p>
-            <p class="card-text"> Last 30 Days : N/A</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="card card3">
-          <div class="card-body">
-            <h6 class="card-title" style="color:rgb(80, 255, 95)">LIFETIME REVENUE GENERATED</h6>
-            <h1>N/A <i class="fa-light fa-treasure-chest icontop" style="float: right;"></i></h1>
-            <p class="card-text">Last 7 Days: N/A</p>
-            <p class="card-text"> Last 30 Days : N/A</p>
-          </div>
-        </div>
-      </div>
-    </div>
+.btn{
+margin-left: 35%;
+ margin-top: 2%;
+  margin-bottom: 2%;
+}
 
 
-    <div class="row my-container active-cont product ">
-      <div class="col-sm-12 col-md-3 col-lg-12">
-        <div class="card">
-          <div class="card-body"></div>
-          <p style="padding-top: 2rem; color: rgb(80, 95, 255);">Products</p>
-          <p>The school owner has enabled affiliate commissions for the following products.</p>
-        </div>
-      </div>
+	 </style>
+	 
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	 <script src="https://kit.fontawesome.com/269b3f7433.js" crossorigin="anonymous"></script>
+	<!-- <div class="empty-section d-flex justify-content-center align-items-center ">
+		<div class="col-md-6 p-2 text-center my-3">
+			<img class="w-25 mb-3" src="../../assets/cookies.png" alt="">
+			<h5>Account Expired!</h5>
+			<p>Your current plan is expired.</p>
+			<a href="/lifetime" class="btn primary-button"> <i class="fa fa-solid fa fa-plus"></i> Upgrade Now</a>
+		</div>
+	</div> -->
 
-    </div>
-    </div>
-    <div class="table-responsive-sm table-responsive-md tbox" >
-      <div class="  col-sm-3 col-md-4 col-lg-12">
-        <table class=" table table-borderless table-hover">
-          <tr>
-            <th style='padding-right:10rem; color: red;' scope="col">PRODUCT</th>
-            <th scope="col" style="color: red;" >AFFILIATE LINK</th>
-          </tr>
-          <tr scope="row" class="table-borderless">
-            <td style="color: green;">Cupcake Like a Boss</td>
-            <td>https://the-sweet-shop.teachable.com/courses/cupcake-like-a-boss <button class="btn btn-light " style="border-style: solid;
-            border-width: 2px; margin-left: 7rem; border-color: black;">Copy</button></td>
-          </tr>
-        </table>
-      </div>
+<div class="container mt-5 expired" style='width:50%'>
+<h1  class='text-center' >Peace of mind that my business potential legal troubles</h1>
+<div class='innerexpired'>
+<p style='margin-bottom: 0rem;' >Keep your business stays in compliance with the ever changing privacy laws like GDPR, CCPA, LGPD, etc without having to 
+<ul class='upper'>
+	<li>
+	 Worry about creating policies yourself for your website.
+	</li>
+	<li>
+	Spend thousands of $$ in lawyer fee. 
+	</li>
+	<li>
+	 Waste hours every week to keep track of ever changing laws to update policies and cookie banner.
+	</li>
+</ul>
+</p>
 
-    </div>
-
-    <button type="button" class="btn btn-dark row my-container active-cont helpbtn" ><i
-        class="fa-light fa-circle-question" style="display: inline;"></i> Help</button>
-
-    <!-- bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"></script>
+<p>
+Cookiezen is best suited for bloggers, ecom store owners and online business owners who are serious about their business. Cookiezen unlike other cookie plugins won't slow your website and reduce your customers experience. It has capability to style exactly your brand.
+</p>
 
 
 
-</body>
+<div class='benefits'>
+<h4>Key benefits you will miss if you don't upgrade</h4>
+<ul>
+	<li>
+Ability to <b>create auto updating policies in few minutes instead of wasting lots $$ on lawyers or wasting 10s of hours</b>
+</li>
+<li>
+<b>Cookie banner and policies automatically gets updated</b> according to latest privacy laws
+</li>
+<li>
+<b>Set and forget compliance management -** All you need to do is setup once and it auto updates without you having to do anything</b>
+</li>
+<b>Multilingual Cookie banner</b>that auto detects your visitor language and shows them banner in their  local language
+<li>
+<b>Get Cookiezen lifetime deal at one time cost without having to pay monthly subscription for cookie solution**</b>
+</li>
+<li>
+	<b>Ability to manage multiple websites </b>for yourself and your clients from single dashboard
+</li>
+<li><b>Ability to sell Cookiezen to your Agency clients </b>with the help of CNAME and assign a particular domain to clients</li>
+</ul>
+</div>
 
-</html>
+
+<button class='btn btn-light border border-black'>Get lifetime Access</button>
+
+</div>
+
+</div>
+
